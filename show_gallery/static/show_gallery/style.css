@@ -1,0 +1,153 @@
+
+body{
+	background-color:#E3DCC9;
+	padding: 0px;
+	margin:0px;
+}
+
+.clickable{
+	cursor:pointer;
+}
+
+.menu{
+	background-color:#7C5641;
+	width:100%;
+	height:150px;
+	border-top-left-radius: 75px;
+	border-top-right-radius: 75px;
+}
+
+.insta-stripes{
+	margin-left:150px;
+	font-size:0px;
+	display:inline-block;
+}
+
+.menu .insta-stripe{
+	width:50px;
+	height:100%;
+	display:inline-block;
+}
+
+.menu .insta-stripe.red{
+	background-color:#E93E54;
+}
+
+.menu .insta-stripe.yellow{
+	background-color:#FAD43B;
+}
+
+.menu .insta-stripe.green{
+	background-color:#7DC99A;
+}
+
+.menu .insta-stripe.blue{
+	background-color:#5C79BC;
+}
+
+.content .insta-viewfinder{
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    display: inline-block;
+    border-radius: 10px;
+    position: absolute;
+    right: 100px;
+    top: 25px;
+}
+
+.content form{
+    display: inline-block;
+    font-family: 'Lobster';
+    vertical-align: top;
+    margin-top: 60px;
+    margin-left:30px;
+    font-size: 30px;
+}
+
+.content form input{
+	background-color:#E3DCC9;
+	font-size:30px;
+	outline:none;
+	color:#666;
+}
+
+.content form .error{
+	color:#E93E54;
+	font-size: 25px;
+}
+
+.content form input.submit-btn{
+	font-family: 'Lobster';
+    background-color: #7DC99A;
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.main-text{
+	font-size: 160px;
+	text-align:center;
+	color:#D9CDAC;
+	font-family:'Fredoka One';
+	top:300px;
+	transform:translateY(-50%);
+	position:relative;
+}
+
+
+.content .templates-btns{
+	display:inline-block;
+	vertical-align:top;
+	font-family: 'Lobster';
+    font-size: 30px;
+    top: 50%;
+    position: relative;
+	margin-top: 2%;
+    margin-left: 2%;
+}
+
+
+.content .template-btn{
+	display:inline-block;
+    background-color: #7DC99A;
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+    border: none;
+    border-radius: 10px;
+}
+
+.content .template-btn.selected a{
+	color: #FAD43B;
+}
+
+.content .template-btn a{
+	text-decoration: none;
+	 color: black;
+}
+
+.content .go-back{
+	display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    right: 115px;
+    top: 60px;
+    font-family: Lobster;
+    z-index: 123;
+    font-size: 30px;
+}
+
+.content .go-back a{
+	color: white;
+	text-decoration: none;
+}
+
+.imgs-holder{
+	text-align:center;
+	padding:30px;
+    height: 100%;
+}

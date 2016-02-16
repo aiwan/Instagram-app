@@ -1,0 +1,28 @@
+{% extends 'show_gallery/base.html' %}
+
+{% block content %}
+    <div class="templates-btns">
+            <span>Watch your images in different styles:</span>
+
+            {% block btn1 %}<div class="template-btn "><a href="/show_gallery/{{account_id}}/template1" >Style 1</a></div>{% endblock %}
+            {% block btn2 %}<div class="template-btn "><a href="/show_gallery/{{account_id}}/template2" >Style 2</a></div>{% endblock %}
+            {% block btn3 %}<div class="template-btn "><a href="/show_gallery/{{account_id}}/template3" >Style 3</a></div>{% endblock %}
+            {% block btn4 %}<div class="template-btn "><a href="/show_gallery/{{account_id}}/template4" >Style 4</a></div>{% endblock %}
+            {% block btn5 %}<div class="template-btn "><a href="/show_gallery/{{account_id}}/template5" >Style 5</a></div>{% endblock %}
+
+    </div>
+
+    <div class="go-back clickable"><a href="/show_gallery/" >BACK</a></div>
+    <div class="insta-viewfinder"></div>
+
+    <div class="imgs-holder">
+        {% for picture in picture_list %}
+            <div class="{% block style %}{% endblock %}">
+            <img src={{ picture.picture_name }} {% block img-style %}{% endblock %}/>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}
+
+

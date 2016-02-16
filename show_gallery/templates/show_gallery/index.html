@@ -1,0 +1,17 @@
+{% extends 'show_gallery/base.html' %}
+
+{% block content %}
+
+    <form method="POST" action="/show_gallery/check_user/">
+        {% csrf_token %}
+        <!--<input type='hidden' name='csrfmiddlewaretoken' value='6qOoCW6ZQTfOCf6FjFPzVTbW5LPGkjjU' />-->
+        <label>Please Enter your Instagram user name: </label>
+        <input  name="username" type="text" />
+        <input class="clickable submit-btn" type="submit" value="Load my gallery" /><br>
+        <span class="error">{{error_message}}</span>
+    </form>
+
+    <div class="insta-viewfinder"></div>
+
+    <div class="main-text" >Load Your Gallery </div>
+{% endblock %}
